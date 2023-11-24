@@ -31,12 +31,14 @@ public class Open extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        String urls[]={"https://www.google.com","https://youtube.ie","https://www.cysecurity.org/"};
          try {
             PrintWriter out = response.getWriter();
            String url=request.getParameter("url");
            if(url!=null)
            {
-              response.sendRedirect(url);
+              int id = Integer.parseInt(url);
+              response.sendRedirect(urls[id]);
            }
            else
            {
