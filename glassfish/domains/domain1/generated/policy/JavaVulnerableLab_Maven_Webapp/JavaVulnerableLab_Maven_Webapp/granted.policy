@@ -1,0 +1,26 @@
+/* AUTOMATICALLY GENERATED ON Wed Nov 22 15:49:50 GMT 2023*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebUserDataPermission "/";
+  permission javax.security.jacc.WebResourcePermission "/";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "UsernameCheck", "**";
+  permission javax.security.jacc.WebRoleRefPermission "ForwardMe", "**";
+  permission javax.security.jacc.WebRoleRefPermission "XPathQuery", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+  permission javax.security.jacc.WebRoleRefPermission "SendMessage", "**";
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "Logout", "**";
+  permission javax.security.jacc.WebRoleRefPermission "xxe", "**";
+  permission javax.security.jacc.WebRoleRefPermission "Install", "**";
+  permission javax.security.jacc.WebRoleRefPermission "AddPage", "**";
+  permission javax.security.jacc.WebRoleRefPermission "Open", "**";
+  permission javax.security.jacc.WebRoleRefPermission "EmailCheck", "**";
+  permission javax.security.jacc.WebRoleRefPermission "loginValidator", "**";
+  permission javax.security.jacc.WebRoleRefPermission "Register", "**";
+};
+
